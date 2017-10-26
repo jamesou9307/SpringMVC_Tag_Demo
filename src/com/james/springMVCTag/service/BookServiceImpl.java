@@ -38,7 +38,13 @@ public BookServiceImpl(){
 
     @Override
     public Category getCategory(int id) {
-        return categories.get(id);
+
+    for(Category category:categories){
+        if(category.getId()==id){
+            return category;
+        }
+    }
+    return null;
     }
 
     @Override
