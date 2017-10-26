@@ -21,7 +21,7 @@ public class BookController {
     private BookService bookService;
     private static Log logger= LogFactory.getLog(BookController.class);
 
-    @RequestMapping(value = "/L8888")
+    @RequestMapping(value = "/book_input")
     public String inputBook(Model model){
         List<Category> categories=bookService.getAllCategories();
         model.addAttribute("categories",categories);
