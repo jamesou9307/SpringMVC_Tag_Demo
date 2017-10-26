@@ -24,7 +24,7 @@
             <th>Author</th>
             <th>&nbsp;</th>
         </tr>
-        <c:forEach items="books" var="book">
+        <c:forEach items="${books}" var="book">
             <tr>
                 <td>${book.category.name}</td>
                 <td>${book.title}</td>
