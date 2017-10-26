@@ -14,14 +14,14 @@
 </head>
 <body>
 <div id="global">
-    <form:form commandName="book" action="/book_update" method="post">
+    <form:form commandName="book" action="/springmvc_tag/book_update" method="post">
         <fieldset>
             <legend>Edit a book</legend>
             <form:hidden path="id"/>
             <p>
                 <label for="category">Category:</label>
-                <form:select id="category" path="category.id" items="${categories}"
-                itemlabel="name" itemValue="id"/>
+                <form:select id="category"
+                             path="category.id" items="${categories}" itemLabel="name" itemValue="id"/>
             </p>
             <p>
                 <label for="title">Title:</label>
